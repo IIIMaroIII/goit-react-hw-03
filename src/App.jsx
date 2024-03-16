@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <Phonebook />
+      {/* <Phonebook /> */}
       <ContactForm />
       <SearchBox value={filter} onFilter={setFilter} />
       <ContactList onDelete={deleteContact} data={filteredContacts} />
