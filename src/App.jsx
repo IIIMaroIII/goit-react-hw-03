@@ -1,4 +1,4 @@
-import { useState, useEffect, useId } from 'react';
+import { useState, useEffect } from 'react';
 import initialData from './components/data/initialData.json';
 import loadFromLS from './scripts/loadFromLS';
 import saveToLS from './scripts/saveToLS';
