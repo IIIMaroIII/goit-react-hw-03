@@ -8,16 +8,16 @@ const SearchBox = ({ value, onFilter }) => {
     <div className={css.wrapper}>
       <label htmlFor={filterId} className={css.label}>
         Find contacts by name
-        <input
-          id={filterId}
-          className={css.input}
-          type="text"
-          value={value}
-          onChange={e => {
-            onFilter(e.target.value);
-          }}
-        />
       </label>
+      <input
+        id={filterId}
+        className={css.input}
+        type="text"
+        value={value}
+        onChange={e => {
+          onFilter(e.target.value);
+        }}
+      />
     </div>
   );
 };
