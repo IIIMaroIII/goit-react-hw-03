@@ -41,6 +41,8 @@ push origin --delete'
 
 # Alias for deleting locally merged branches
 
+# Alias for deleting locally merged branches
+
 alias gbd-local='git branch --merged main | grep -v "main" | xargs -n 1 git
 branch -d'
 
