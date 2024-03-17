@@ -22,6 +22,9 @@ const SearchBox = ({ value, onFilter }) => {
   );
 };
 
-SearchBox.propTypes = {};
+SearchBox.propTypes = {
+  value: PropTypes.string.isRequired,
+  onFilter: PropTypes.func.isRequired,
+};
 
 export default SearchBox;

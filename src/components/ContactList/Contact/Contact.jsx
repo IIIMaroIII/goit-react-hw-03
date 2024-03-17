@@ -3,6 +3,7 @@ import { IoIosContact } from 'react-icons/io';
 import { FaPhoneAlt } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
+import { arrayOf } from 'prop-types';
 
 const Contact = ({ data, onDelete }) => {
   return data.map(({ id, name, number }) => {
@@ -33,6 +34,15 @@ const Contact = ({ data, onDelete }) => {
   });
 };
 
-Contact.propTypes = {};
+Contact.propTypes = {
+  data: arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+  onDelete: PropTypes.func.isRequired,
+};
 
 export default Contact;
